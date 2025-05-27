@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    animation: background_change 4s alternate infinite;
+}
+
+button {
+    display: block;
+    width: 400px;
+    height: 60px;
+    background: #EEAECA;
+    background: radial-gradient(circle,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+button:hover {
+    transform: scale(1.1) translateY(-5px);
+}
+
+@keyframes background_change {
+    from {
+        background-image: url("one.jpg");
+    }
+
+    50% {
+        background-image: url("two.jpg");
+    }
+
+    to {
+        background-image: url("three.jpg");
+    }
+}
