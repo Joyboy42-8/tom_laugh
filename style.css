@@ -25,6 +25,7 @@ button {
     border: none;
     cursor: pointer;
     transition: all .4s ease;
+    animation: entry 2s;
 }
 
 button:hover {
@@ -42,5 +43,19 @@ button:hover {
 
     to {
         background-image: url("three.jpg");
+    }
+}
+
+@keyframes entry {
+    from {
+        transform: scale(0.3);
+    }
+    
+    50% {
+        transform: scale(1.5);
+    }
+
+    to {
+        transform: scale(1);
     }
 }
